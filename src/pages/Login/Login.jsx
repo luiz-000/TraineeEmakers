@@ -1,13 +1,25 @@
 import React from 'react';
 import { useState } from 'react';
 
+import { useNavigate } from 'react-router-dom';
 import { GoArrowRight } from "react-icons/go";
 
 import './Login.css';
 
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const navigate = useNavigate();
+
+  function irRegistrar(){
+    navigate('/registrar')
+  }
+
+  function irRecuperarConta(){
+    navigate('/recuperarConta')
+  }
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -43,14 +55,14 @@ const Login = () => {
         </div>
 
         <div className='criarContaLink'>
-          <a href='#'> Criar conta </a>
-          <a href='#'> Esqueceu a senha? </a>
+          <a onClick={irRegistrar} href='#'> Criar conta </a>
+          <a onClick={irRecuperarConta} href='#'> Esqueceu a senha? </a>
         </div>
 
       </div>
 
       <div className='containerImagemFundo'>
-        <img src='\src\assets\imagens\image2.png'></img>
+        <img src='/src/assets/imagens/image2.png'></img>
       </div>
 
     </div>
