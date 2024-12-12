@@ -39,7 +39,7 @@ body{
     font-size: 18px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 0 12px rgb(177, 165, 165);
+    box-shadow: 0px 4px 20px 0px #00000040;
     box-sizing: border-box;
 }
 
@@ -54,7 +54,7 @@ body{
     display: flex;
     justify-content: end;
     align-items: end;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .butonRecuperar a{
