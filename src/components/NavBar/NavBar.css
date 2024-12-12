@@ -1,0 +1,77 @@
+* {
+    font-family: Montserrat;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #FBF6F0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.navbarImg img {
+    width: 100px;
+    height: 100px;
+    margin-top: 1px;
+    margin-left: 40px;
+}
+
+.navbarLinks {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbarLinks li {
+    margin: 0 15px;
+}
+
+.navbarLinks a {
+    color: #4B626C;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 39.01px;
+}
+
+.navbarLinks a:hover {
+    text-decoration: underline;
+}
+
+.navbarCampoBusca {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.navbarCampoBusca input {
+    width: 165px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: #97A4A273;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    font-size: 16px;
+}
+
+.navbarCampoBusca button {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.iconeBusca {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    color: #000000;
+    background-color: transparent;
+}
