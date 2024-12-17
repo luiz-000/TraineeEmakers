@@ -1,0 +1,56 @@
+* {
+    font-family: Montserrat;
+}
+
+.containerDireito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #4B626C;
+}
+
+.containerJogos {
+    width: 475px;
+    height: auto;
+    margin-top: 60px;
+    background-color: #4B626C;
+}
+
+.containerJogos h1 {
+    width: 280px;
+    height: 39px;
+    background-color: #4B626C;
+
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39.01px;
+    color: #FBF6F0;
+}
+
+.containerJogos img {
+    width: 150px;
+    height: 210px;
+    margin-top: 25px;
+}
+
+.jogosTopo , .jogosBase {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4B626C;
+}
+
+.jogo {
+    text-align: center;
+    background-color: #4B626C;
+}
+
+.jogo p {
+    max-width: 100%;
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21.94px;
+    color: #FBF6F0;
+    background-color: #4B626C;
+}
