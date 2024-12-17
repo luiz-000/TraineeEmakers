@@ -19,7 +19,7 @@ const NavBar = () => {
                     <li><a href="#"> Populares </a></li>
                     <li><a href="#"> Gêneros </a></li>
                     <li><a href="#"> Promoções </a></li>
-                    <li><a href="#"> Conta </a></li>
+                    <li><a href="/conta"> Conta </a></li>
                 </ul>
 
                 <div className="navbarCampoBusca">
