@@ -1,12 +1,22 @@
 import React from 'react';
 
+import './Conta.css';
+
 import NavBar from '../../components/navBar/navBar';
+import InformacoesUsuario from '../../components/InformacoesUsuario/InformacoesUsuario';
+import JogosAdquiridos from '../../components/JogosAdquiridos/JogosAdquiridos';
+import CarrinhoCompra from '../../components/CarrinhoCompra/CarrinhoCompra';
 
 
 const Conta = () => {
   return (
-    <div>
+    <div className='container'>
+        
         <NavBar />
+        <div className='componenteEsquerdo'> <InformacoesUsuario /> </div>
+        <div className='componenteDireito'> <JogosAdquiridos /> </div>
+        <div className='componentesCarrinhoCompra'> <CarrinhoCompra /> </div>
+
     </div>
   )
 }
