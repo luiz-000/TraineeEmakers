@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { GoArrowRight } from "react-icons/go";
 
 import './Login.css';
@@ -10,16 +10,6 @@ import './Login.css';
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
-  const navigate = useNavigate();
-
-  function irRegistrar(){
-    navigate('/registrar')
-  }
-
-  function irRecuperarConta(){
-    navigate('/recuperarConta')
-  }
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -51,12 +41,12 @@ const Login = () => {
         </form>
 
         <div className='butonLogin'>
-            <a href="#"> <GoArrowRight className='icon'/></a>
+            <Link to='/conta'> <GoArrowRight className='icon'/> </Link>
         </div>
 
         <div className='criarContaLink'>
-          <a onClick={irRegistrar} href='#'> Criar conta </a>
-          <a onClick={irRecuperarConta} href='#'> Esqueceu a senha? </a>
+          <Link to='/registrar'> Criar Conta </Link>
+          <Link to='/recuperarConta'> Esqueceu a senha? </Link>
         </div>
 
       </div>

@@ -1,18 +1,12 @@
 import React from 'react'
 
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { GoArrowRight } from "react-icons/go";
 
 import "./Registrar.css";
 
 
 const Registrar = () => {
-
-  const navigate = useNavigate();
-
-  function irLogin(){
-    navigate('/')
-  }
 
   return (
     <div className='container'>
@@ -55,11 +49,11 @@ const Registrar = () => {
         </form>
 
         <div className='butonRegistrar'>
-            <a href="#"> <GoArrowRight className='icon'/></a>
+            <Link to='/'> <GoArrowRight className='icon'/> </Link>
         </div>
 
         <div className='FazerLoginLink'>
-          <a onClick={irLogin} href='#'> Fazer Login </a>
+          <Link to='/'> Fazer Login </Link>
         </div>
 
       </div>

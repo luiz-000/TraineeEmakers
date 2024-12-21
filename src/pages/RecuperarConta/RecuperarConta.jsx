@@ -1,22 +1,12 @@
 import React from 'react';
 
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { GoArrowRight } from "react-icons/go";
 
 import "./RecuperarConta.css";
 
 
 const RecuperarConta = () => {
-
-    const navigate = useNavigate();
-
-    function irRegistrar(){
-        navigate('/registrar');
-    }
-
-    function irFazerLogin(){
-        navigate('/');
-    }
 
     return (
         <div className='container'>
@@ -39,12 +29,12 @@ const RecuperarConta = () => {
                 </form>
 
                 <div className='butonRecuperar'>
-                    <a href="#"> <GoArrowRight className='icon'/></a>
+                    <Link to='/'> <GoArrowRight className='icon'/> </Link>
                 </div>
 
                 <div className='links'>
-                    <a onClick={irRegistrar} href='#'>Criar Conta</a>
-                    <a onClick={irFazerLogin} href='#'>Fazer Login</a>
+                    <Link to='/registrar'> Criar Conta </Link>
+                    <Link to='/'> Fazer Login </Link>
                 </div>
 
             </div>
