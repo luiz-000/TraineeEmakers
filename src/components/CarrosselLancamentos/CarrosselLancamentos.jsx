@@ -4,7 +4,23 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
+
 import './CarrosselLancamentos.css';
+
+
+const SampleNextArrowCarrosselLancamento = ({ onClick }) => (
+  <button onClick={onClick} className='iconeAvancarSlideCarrosselLancamento'>
+    <SlArrowRight />
+  </button>
+);
+
+const SamplePrevArrowCarrosselLancamento = ({ onClick }) => (
+  <button onClick={onClick} className='iconeVoltarSlideCarrosselLancamento'>
+    < SlArrowLeft />
+  </button>
+);
+
 
 const CarrosselLancamentos = () => {
     const slides = [
@@ -20,7 +36,10 @@ const CarrosselLancamentos = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 5,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+
+        nextArrow: <SampleNextArrowCarrosselLancamento />,
+        prevArrow: <SamplePrevArrowCarrosselLancamento />
     };
 
     return (
@@ -33,7 +52,11 @@ const CarrosselLancamentos = () => {
                         <div key={index} className='fundo'>
                             
                             <div className='images'>
-                                <img src={image}></img>
+                                <img loading='lazy' src={image}></img>
+                                
+                                <div className='precoJogoLancamento'>
+                                    <p> R$ 299,00 </p>
+                                </div>
                             </div>
                             
                         </div>
