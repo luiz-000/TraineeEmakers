@@ -1,39 +1,26 @@
 import React from 'react';
 
-import { IoIosArrowBack , IoIosArrowForward } from "react-icons/io";
-
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
+
 import './Carrossel.css';
 
 
-/*function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "transparent"}}
-      onClick={onClick}
-    >
-      <button className='arrow'> <IoIosArrowForward className='icone'/> </button>
-    </div>
-  );
-}
+const SampleNextArrowCarrossel = ({ onClick }) => (
+  <button onClick={onClick} className='iconeAvancarSlideCarrossel'>
+    <SlArrowRight />
+  </button>
+);
 
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "transparent"}}
-      onClick={onClick}
-    >
-      <button className='arrow'> <IoIosArrowBack className='icone'/> </button>
-    </div>
-  );
-}*/
+const SamplePrevArrowCarrossel = ({ onClick }) => (
+  <button onClick={onClick} className='iconeVoltarSlideCarrossel'>
+    < SlArrowLeft />
+  </button>
+);
+
 
 const Carrossel = () => {
 
@@ -51,7 +38,7 @@ const Carrossel = () => {
     },
     {
       imgEsquerda1: 'src/assets/imagens/imagemJogoMortal.jpg',
-      imgEsquerda2: 'src/assets/imagens/imagemJogoSkyrim.jpg',
+      imgEsquerda2: 'src/assets/imagens/imagemJogoFifa.webp',
       imgDireita: 'src/assets/imagens/imagemJogoDeath2.jpg',
       precoEsq1: 'R$ 80,99',
       descontoEsq1: '-50%',
@@ -79,6 +66,9 @@ const Carrossel = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+
+    nextArrow: <SampleNextArrowCarrossel />,
+    prevArrow: <SamplePrevArrowCarrossel />
   };
 
   return (
