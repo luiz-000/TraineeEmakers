@@ -1,13 +1,9 @@
-* {
-    font-family: Montserrat;
-    background-color: #FBF6F0;
-}
-
 .containerEsquerdo {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #FBF6F0;
 }
 
 .dadosUsuario {
