@@ -1,16 +1,8 @@
-*{
-    font-family: Montserrat;
-    background-color: #FBF8F4;
-    margin: 0;
-}
-
-body{
-    overflow: hidden;
-}
-
 .container{
     display: flex;
     height: 100vh;
+
+    background-color: #FBF8F4;
 }
 
 .containerRegistrar{
