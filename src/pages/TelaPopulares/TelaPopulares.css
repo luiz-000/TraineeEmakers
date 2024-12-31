@@ -1,0 +1,23 @@
+.containerTelaPopulares {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #FBF6F0;
+
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.posicaoCompraTelaPopulares {
+    position: relative;
+}
+
+.carrinhoCompraTelaPopulares {
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    top: 90px;
+    right: 80px;
+    z-index: 100;
+}
