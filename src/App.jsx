@@ -9,6 +9,7 @@ import Registrar from './pages/Registro/Registrar.jsx';
 import RecuperarConta from './pages/RecuperarConta/RecuperarConta.jsx';
 import Conta from './pages/TelaConta/Conta.jsx';
 import TelaPrincipal from './pages/TelaPrincipal/TelaPrincipal.jsx';
+import TelaPopulares from "./pages/TelaPopulares/TelaPopulares.jsx";
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
             <Route path="/recuperarConta" element={<RecuperarConta />} />
             <Route path="/conta" element={<Conta />} />
             <Route path="/principal" element={<TelaPrincipal />} />
+            <Route path="/populares" element={<TelaPopulares />} />
         </Routes>
     </Router>
   );
