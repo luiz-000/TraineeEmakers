@@ -1,13 +1,16 @@
 import React from 'react';
 
 import { TfiShoppingCart } from "react-icons/tfi";
+import { Link } from 'react-router-dom';
 
 import './CarrinhoCompra.css'
 
 const CarrinhoCompra = () => {
   return (
     <div className='carrinhoCompra'>
-        <button> <TfiShoppingCart className='iconeCarrinhoCompra' /> </button>
+        <button>
+          <Link to='/principal'> <TfiShoppingCart className='iconeCarrinhoCompra' /> </Link>
+        </button>
     </div>
   )
 }
