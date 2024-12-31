@@ -1,0 +1,94 @@
+.containerJogosPopulares {
+    position: relative;
+
+    top: 17vh;
+    width: auto;
+    height: auto;
+
+    margin: 0px 109px 50px;
+}
+
+.containerJogosPopulares h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43.88px;
+    color: #4B626C;
+}
+
+.layoutPopulares {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: auto;
+    height: auto;
+
+    gap: 5%;
+    padding: 20px;
+    border-radius: 20px;
+
+    transition: background 0.4s ease;
+}
+
+.layoutPopulares:hover {
+    border-radius: 20px;
+    background-color: #99929240;
+}
+
+.imagemJogosPopulares {
+    position: relative;
+    display: inline-block;
+}
+
+.imagemJogosPopulares img {
+    display: block;
+
+    width: 479px;
+    height: 283px;
+
+    border-radius: 15px;
+    margin-top: 25px;
+}
+
+.indiceJogoPopular {
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #FBF6F0;
+
+    background-color: #4B626C;
+
+    top: 0;
+    left: -25px;
+
+    cursor: default;
+}
+
+.infosJogos p{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24.38px;
+    color: #4B626C;
+
+    text-align: justify;
+}
+
+.infosJogos h3 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39.01px;
+    color: #4B626C;
+
+    text-align: center;
+    margin-bottom: 15px;
+}
