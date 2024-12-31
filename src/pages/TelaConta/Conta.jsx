@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Conta.css';
 
-import NavBar from '../../components/navBar/navBar';
+import NavBar from '../../components/NavBar/NavBar';
 import InformacoesUsuario from '../../components/InformacoesUsuario/InformacoesUsuario';
 import JogosAdquiridos from '../../components/JogosAdquiridos/JogosAdquiridos';
 import CarrinhoCompra from '../../components/CarrinhoCompra/CarrinhoCompra';

@@ -25,7 +25,7 @@ const Footer = () => {
           <h4> Explorar </h4>
           <ul>
             <li> <Link to='/principal'> Inicio </Link> </li>
-            <li> <Link to=''> Populares </Link> </li>
+            <li> <Link to='/populares'> Populares </Link> </li>
             <li> <Link to='/conta'> Conta </Link> </li>
           </ul>
         </div>

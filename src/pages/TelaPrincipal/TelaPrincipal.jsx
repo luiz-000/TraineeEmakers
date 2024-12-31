@@ -2,7 +2,7 @@ import React from 'react';
 
 import './TelaPrincipal.css';
 
-import NavBar from '../../components/navBar/navBar';
+import NavBar from '../../components/NavBar/NavBar';
 import Carrossel from '../../components/Carrossel/Carrossel';
 import CarrosselLancamentos from '../../components/CarrosselLancamentos/CarrosselLancamentos';
 import CarrinhoCompra from '../../components/CarrinhoCompra/CarrinhoCompra';
