@@ -1,0 +1,101 @@
+.containerInfoJogo {
+    position: relative;
+
+    top: 25vh;
+    width: auto;
+    height: auto;
+
+    margin: 0px 70px 50px;
+}
+
+.layoutInfoJogo {
+    display: flex;
+    flex-direction: row;
+}
+
+.imagemInfoJogo {
+    width: 60vw;
+    height: auto;
+}
+
+.imagemInfoJogo img {
+    width: 60vw;
+    height: 100%;
+}
+
+.textoInfoJogo {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+
+    border-radius: 0px 10px 10px 0px;
+    background-color: #4B626C;
+}
+
+.textoInfoJogo h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39.01px;
+
+    color: #FBF6F0;
+}
+
+.textoInfoJogo p {
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 28.00px;
+
+    width: auto;
+    height: auto;
+
+    margin: 0px 25px 0px 25px;
+    padding: 0px 15px 25px 15px;
+    
+    color: #FBF6F0;
+
+    border-bottom: 2px solid #FBF6F0;
+}
+
+.buttonsInfoJogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: auto;
+    height: auto;
+
+    gap: 5px;
+    
+    background-color: transparent;
+}
+
+.buttonsInfoJogo button {
+    width: 230px;
+    height: 35px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: #4B626C;
+
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #FCFAFA;
+}
+
+.buttonsInfoJogo button:hover {
+    border: 2px solid #4B626C;
+    box-shadow: 0px 0px 7px 7px #a7a6a6;
+}
+
+.buttonReembolsoInfoJogo {
+    opacity: 50%;
+}
