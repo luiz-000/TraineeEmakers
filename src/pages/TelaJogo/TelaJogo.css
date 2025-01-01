@@ -1,0 +1,10 @@
+.containerTelaJogo {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #FBF6F0;
+
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
