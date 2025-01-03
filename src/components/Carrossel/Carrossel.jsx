@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
+import { Link } from 'react-router-dom';
 
 import './Carrossel.css';
 
@@ -81,7 +82,9 @@ const Carrossel = () => {
             <div className='grid'>
 
               <div className='direito'>
-                <img loading='lazy' src={slide.imgDireita}></img>
+                <Link to = {slide.imgDireita === 'src/assets/imagens/imagemJogoGod2.png' ? '/jogo' : '#'} >
+                  <img loading='lazy' src={slide.imgDireita}></img>
+                </Link>
 
                 <div className='textoDireito'>
                   <p className='desconto'> {slide.descontoDireita} </p>
