@@ -16,10 +16,10 @@ const NavBar = () => {
                 </div>
 
                 <ul className="navbarLinks">
-                    <li><a href="#"> Lançamentos </a></li>
+                    <li> <Link to='/principal'> Lançamentos </Link> </li>
                     <li> <Link to='/populares'> Populares </Link> </li>
                     <li><a href="#"> Gêneros </a></li>
-                    <li><a href="#"> Promoções </a></li>
+                    <li> <Link to='/principal'> Promoções </Link> </li>
                     <li> <Link to='/conta'> Conta </Link> </li>
                 </ul>
 
