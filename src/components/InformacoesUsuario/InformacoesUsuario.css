@@ -29,7 +29,7 @@
     margin-bottom: 5px;
 }
 
-.dadosUsuario button {
+.dadosUsuario button , .dadosUsuario a{
     width: 270px;
     height: 45px;
     border-radius: 10px;
@@ -42,6 +42,8 @@
     line-height: 36.57px;
     color: #FBF6F0;
     margin-top: 25px;
+    
+    text-decoration: none;
 }
 
 .dadosUsuario button:hover{
