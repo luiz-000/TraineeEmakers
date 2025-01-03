@@ -42,17 +42,22 @@
     line-height: 29.26px;
 }
 
-.butonLogin{
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    margin-top: 20px;
+.formGroup button {
+    width: 100%;
+    height: auto;
+    
+    border: none;
+    margin-top: 25px;
+    text-align: end;
+
+    cursor: pointer;
+    background: #FBF8F4;
 }
 
-.butonLogin a{
-    text-decoration: none;
+.iconLogin {
+    width: 55px;
+    height: auto;
     color: #4B626C;
-    font-size: 45px;
 }
 
 .criarContaLink{

@@ -1,7 +1,8 @@
-import React from 'react';
-import { useState } from 'react';
+import { React , useState } from 'react';
 
 import { Link } from 'react-router-dom';
+
+import { useNavigate } from 'react-router-dom';
 import { GoArrowRight } from "react-icons/go";
 
 import './Login.css';
@@ -10,10 +11,11 @@ import './Login.css';
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(email, password)
+    navigate('/conta', { state: { userEmail: email } });
   }
 
   return (
@@ -38,11 +40,10 @@ const Login = () => {
             </input>
           </div>
 
+          <button type='submit' className='butonLogin'>
+            <GoArrowRight className='iconLogin'/>
+          </button>
         </form>
-
-        <div className='butonLogin'>
-            <Link to='/conta'> <GoArrowRight className='icon'/> </Link>
-        </div>
 
         <div className='criarContaLink'>
           <Link to='/registrar'> Criar Conta </Link>
