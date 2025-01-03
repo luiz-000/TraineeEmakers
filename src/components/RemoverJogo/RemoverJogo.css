@@ -1,0 +1,71 @@
+.containerRemoverJogo {
+    position: relative;
+    top: 20vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 24vw;
+    height: 100%;
+
+    background-color: #FFFFFF;
+}
+
+.cardRemoverJogo {
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
+}
+
+.cardRemoverJogo h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39.01px;
+    color: #4B626C;
+
+    text-align: center;
+}
+
+.cardRemoverJogo input {
+    width: 390px;
+    height: 50px;
+
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #FFFFFF;
+    text-align: center;
+    
+    border: none;
+    border-radius: 5px;
+    background-color: #4B626C;
+    box-shadow: 0px 15px 20px 0px #00000040;
+}
+
+.cardRemoverJogo input::placeholder {
+    color: #FFFFFF;
+}
+
+.cardRemoverJogo button {
+    width: 270px;
+    height: 45px;
+    margin: auto;
+
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36.57px;
+    color: #FFFFFF;
+
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    background-color: #4B626C;
+}
+
+.cardRemoverJogo button:hover {
+    border: 2px solid #FBF6F0;
+    box-shadow: 0px 0px 10px 10px #4B626C;
+}
