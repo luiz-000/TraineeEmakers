@@ -1,0 +1,84 @@
+.containerEditarJogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 38vw;
+    height: 100%;
+
+    background-color: #4B626C;
+}
+
+.cardEditarJogo {
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
+}
+
+.cardEditarJogo h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39.01px;
+    color: #FBF6F0;
+
+    text-align: center;
+}
+
+.cardEditarJogo input , .campoImgEditarJogo{
+    width: 390px;
+    height: 50px;
+
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #97A4A2;
+    text-align: center;
+    
+    border: none;
+    border-radius: 5px;
+    background-color: #EFEFEF;
+    box-shadow: 0px 15px 20px 0px #00000040;
+}
+
+.cardEditarJogo button {
+    width: 270px;
+    height: 45px;
+    margin: auto;
+
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36.57px;
+    color: #606060;
+
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    background-color: #FFFFFF;
+}
+
+.cardEditarJogo button:hover {
+    border: 2px solid #4B626C;
+    box-shadow: 0px 0px 10px 10px #FBF6F0;
+}
+
+#campoDescricaoEditarJogo {
+    width: 390px;
+    height: 154px;
+}
+
+.campoImgEditarJogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 50px;
+    margin: auto;
+}
+
+.campoImgEditarJogo input {
+    position: absolute;
+    opacity: 0;
+}
