@@ -8,3 +8,16 @@
     overflow-y: auto;
     overflow-x: hidden;
 }
+
+.posicaoCarrinhoCompraTelaJogo {
+    position: relative;
+}
+
+.CarrinhoCompraTelaJogo {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 150px;
+    right: 20px;
+    z-index: 100;
+}
