@@ -9,7 +9,7 @@ const CarrinhoCompra = () => {
   return (
     <div className='carrinhoCompra'>
         <button>
-          <Link to='/principal'> <TfiShoppingCart className='iconeCarrinhoCompra' /> </Link>
+          <Link to='/carrinho'> <TfiShoppingCart className='iconeCarrinhoCompra' /> </Link> 
         </button>
     </div>
   )
