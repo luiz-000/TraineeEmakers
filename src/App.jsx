@@ -11,6 +11,8 @@ import Conta from './pages/TelaConta/Conta.jsx';
 import TelaPrincipal from './pages/TelaPrincipal/TelaPrincipal.jsx';
 import TelaPopulares from "./pages/TelaPopulares/TelaPopulares.jsx";
 import TelaJogo from "./pages/TelaJogo/TelaJogo.jsx";
+import TelaCarrinho from "./pages/TelaCarrinho/TelaCarrinho.jsx";
+import TelaAdm from "./pages/TelaAdm/TelaAdm.jsx";
 
 const App = () => {
   return (
@@ -23,6 +25,8 @@ const App = () => {
             <Route path="/principal" element={<TelaPrincipal />} />
             <Route path="/populares" element={<TelaPopulares />} />
             <Route path="/jogo" element={<TelaJogo />} />
+            <Route path="/carrinho" element={<TelaCarrinho />} />
+            <Route path="/adm" element={<TelaAdm />} />
         </Routes>
     </Router>
   );
