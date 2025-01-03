@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import './JogosPopulares.css';
 
 const JogosPopulares = () => {
@@ -11,11 +13,11 @@ const JogosPopulares = () => {
 
             <div className='imagemJogosPopulares'>
                 <p className='indiceJogoPopular'> 1º </p>
-                <img loading='lazy' src='src/assets/imagens/imagemJogoGod2.png'></img>
+                <img loading='lazy' src='src/assets/imagens/imagemJogoGod2.png' ></img>
             </div>
 
             <div className='infosJogos'>
-                <h3> God of War </h3>
+                <h3> <Link to='/jogo'> God of War </Link> </h3>
                 <p> Kratos é pai novamente. Como mentor e protetor de Atreus,
                     um filho determinado a ganhar seu respeito, ele é forçado a encarar e
                     controlar a fúria que há muito tempo o define enquanto viaja por um mundo

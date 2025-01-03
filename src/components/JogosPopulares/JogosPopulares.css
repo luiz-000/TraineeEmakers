@@ -83,7 +83,9 @@
     text-align: justify;
 }
 
-.infosJogos h3 {
+.infosJogos h3 , .infosJogos a {
+    text-decoration: none;
+
     font-weight: 600;
     font-size: 32px;
     line-height: 39.01px;
@@ -91,4 +93,8 @@
 
     text-align: center;
     margin-bottom: 15px;
+}
+
+.infosJogos a:hover {
+    text-decoration: underline;
 }
