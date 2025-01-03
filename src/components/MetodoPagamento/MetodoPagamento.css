@@ -1,0 +1,105 @@
+.containerMetodoPagamento {
+    position: relative;
+    
+    width: 42vw;
+    top: 17vh;
+
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #FBF6F0;
+}
+
+.cardMetodoPagamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: auto;
+}
+
+.cardMetodoPagamento h2 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43.88px;
+
+    margin-right: auto;
+    padding-left: 15px;
+
+    color: #4B626C;
+}
+
+.itensMetodoPagamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    margin-top: 120px;
+    gap: 70px;
+}
+
+.itemMetodoPagamento {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 25vw;
+    height: 100%;
+
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39.01px;
+
+    color: #4B626C;
+}
+
+.itemMetodoPagamento img {
+    width: 60px;
+    height: 60px;
+}
+
+.itemMetodoPagamento hr{
+    width: 100%;
+    border: 1px solid #4B626C;
+}
+
+.itemMetodoPagamento button{
+    width: 210px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #4B626C;
+    border: none;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24.38px;
+
+    color: #FBF6F0;
+    cursor: pointer;
+}
+
+.itemMetodoPagamento button:hover {
+    border: 2px solid #FBF6F0;
+    box-shadow: 0px 0px 7px 7px #a7a6a6;
+}
+
+.iconeFinalizarMetodoPagamento {
+    width: 20.00px;
+    height: 15.00px;
+    color: #FBF6F0;
+}
+
+.termosMetodoPagamento {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 24.38px;
+
+    color: #4B626C;
+}
