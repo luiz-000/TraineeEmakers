@@ -13,7 +13,7 @@ const JogosPopulares = () => {
 
             <div className='imagemJogosPopulares'>
                 <p className='indiceJogoPopular'> 1º </p>
-                <img loading='lazy' src='src/assets/imagens/imagemJogoGod2.png' ></img>
+                <img loading='lazy' src='src/assets/imagens/imagemJogoGod2.png' alt='imagem que ajuda a explicar sobre o jogo'></img>
             </div>
 
             <div className='infosJogos'>
@@ -44,7 +44,7 @@ const JogosPopulares = () => {
 
             <div className='imagemJogosPopulares'>
                 <p className='indiceJogoPopular'> 2º </p>
-                <img loading='lazy' src='src/assets/imagens/imagemJogoHorizon.png'></img>
+                <img loading='lazy' src='src/assets/imagens/imagemJogoHorizon.png' alt='imagem que ajuda a explicar sobre o jogo'></img>
             </div>
         </div>
 
@@ -52,7 +52,7 @@ const JogosPopulares = () => {
 
             <div className='imagemJogosPopulares'>
                 <p className='indiceJogoPopular'> 3º </p>
-                <img loading='lazy' src='src/assets/imagens/imagemJogoDays.png'></img>
+                <img loading='lazy' src='src/assets/imagens/imagemJogoDays.png' alt='imagem que ajuda a explicar sobre o jogo'></img>
             </div>
 
             <div className='infosJogos'>

@@ -14,7 +14,7 @@ const MetodoPagamento = () => {
             <div className='itensMetodoPagamento'>
 
                 <div className='itemMetodoPagamento'>
-                    <img loading='lazy' src='src/assets/imagens/imagemPix.png'></img>
+                    <img loading='lazy' src='src/assets/imagens/imagemPix.png' alt='imagem referente ao metodo de pagamento'></img>
                     <p> Pix </p>
                     <input name='formaPagamento' value="pix" type='radio' />
                 </div>

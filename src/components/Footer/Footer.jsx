@@ -13,7 +13,7 @@ const Footer = () => {
       <div className='itemsFooter'>
         
         <div className="logo">
-          <img src="src\assets\imagens\imagem1.png"/>
+          <img src="src\assets\imagens\imagem1.png" alt='logo da empresa no footer'/>
         </div>
 
         <div className='coluna1'>

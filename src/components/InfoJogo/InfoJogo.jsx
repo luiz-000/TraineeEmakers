@@ -13,7 +13,7 @@ const InfoJogo = () => {
             <div className='imagemInfoJogo'>
 
                 <p className='porcentagemInfoJogo'> 98% </p>
-                <img loading='lazy' src='src\assets\imagens\imagemJogoGod2.png'></img>
+                <img loading='lazy' src='src\assets\imagens\imagemJogoGod2.png' alt='imagem que ajuda na descrição do jogo'></img>
                 
                 <div className='valoresInfoJogo'>
                     <p className='descontoInfoJogo'> -40% </p>

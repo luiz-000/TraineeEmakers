@@ -83,7 +83,7 @@ const Carrossel = () => {
 
               <div className='direito'>
                 <Link to = {slide.imgDireita === 'src/assets/imagens/imagemJogoGod2.png' ? '/jogo' : '#'} >
-                  <img loading='lazy' src={slide.imgDireita}></img>
+                  <img loading='lazy' src={slide.imgDireita} alt='imagem de um jogo no carrosel principal'></img>
                 </Link>
 
                 <div className='textoDireito'>
@@ -93,7 +93,7 @@ const Carrossel = () => {
               </div>
 
               <div className='esquerdo'>
-                <img loading='lazy' src={slide.imgEsquerda1}></img>
+                <img loading='lazy' src={slide.imgEsquerda1} alt='imagem de um jogo no carrosel principal'></img>
 
                 <div className='textoEsquerdo'>
                   <p className='desconto'> {slide.descontoEsq1} </p>
@@ -102,7 +102,7 @@ const Carrossel = () => {
               </div>
             
               <div className='esquerdo'>
-                <img loading='lazy' src={slide.imgEsquerda2}></img>
+                <img loading='lazy' src={slide.imgEsquerda2} alt='imagem de um jogo no carrosel principal'></img>
 
                 <div className='textoEsquerdo'>
                   <p className='desconto'> {slide.descontoEsq2} </p>

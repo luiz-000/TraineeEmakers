@@ -52,7 +52,7 @@ const CarrosselLancamentos = () => {
                         <div key={index} className='fundo'>
                             
                             <div className='images'>
-                                <img loading='lazy' src={image}></img>
+                                <img loading='lazy' src={image} alt='imagem de um jogo no carrossel lançamentos'></img>
                                 
                                 <div className='precoJogoLancamento'>
                                     <p> R$ 299,00 </p>

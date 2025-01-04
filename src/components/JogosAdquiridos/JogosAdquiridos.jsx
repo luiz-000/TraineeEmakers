@@ -12,12 +12,12 @@ const JogosAdquiridos = () => {
         <div className='jogosTopo'>
 
           <div className='jogo'>
-            <img loading='lazy' src='/src/assets/imagens/imagemJogoBob.png'></img>
+            <img loading='lazy' src='/src/assets/imagens/imagemJogoBob.png' alt='imagem do jogo que o usuario possui na biblioteca'></img>
             <p> 100/100 </p>
           </div>
 
           <div className='jogo'>
-            <img loading='lazy' src='/src/assets/imagens/imagemJogoDeliver.png'></img>
+            <img loading='lazy' src='/src/assets/imagens/imagemJogoDeliver.png' alt='imagem do jogo que o usuario possui na biblioteca'></img>
             <p> 95/100 </p>
           </div>
 
@@ -26,12 +26,12 @@ const JogosAdquiridos = () => {
         <div className='jogosBase'>
 
           <div className='jogo'>
-            <img loading='lazy' src='/src/assets/imagens/imagemJogoGod.png'></img>
+            <img loading='lazy' src='/src/assets/imagens/imagemJogoGod.png' alt='imagem do jogo que o usuario possui na biblioteca'></img>
             <p> 75/100 </p>
           </div>
 
           <div className='jogo'>
-            <img loading='lazy' src='/src/assets/imagens/imagemJogoDeath.png'></img>
+            <img loading='lazy' src='/src/assets/imagens/imagemJogoDeath.png' alt='imagem do jogo que o usuario possui na biblioteca'></img>
             <p> Adicionar Avaliação </p>
           </div>
           

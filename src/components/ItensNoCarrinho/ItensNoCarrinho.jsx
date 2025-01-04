@@ -17,7 +17,7 @@ const ItensNoCarrinho = () => {
                         <p className="priceGameCarrinhoCompra"> R$ 299,00 </p>
                     </div>
                     
-                    <img loading="lazy" src="src/assets/imagens/imagemJogoBob.png"></img>
+                    <img loading="lazy" src="src/assets/imagens/imagemJogoBob.png" alt="imagem do jogo que esta no carrinho de compra"></img>
                 </div>
                 
                 <div className="itemCarrinhoCompra">
@@ -28,7 +28,7 @@ const ItensNoCarrinho = () => {
                         <p className="priceGameCarrinhoCompra"> R$ 299,00 </p>
                     </div>
                     
-                    <img loading="lazy" src="src/assets/imagens/imagemJogoDeath.png"></img>
+                    <img loading="lazy" src="src/assets/imagens/imagemJogoDeath.png" alt="imagem do jogo que esta no carrinho de compra"></img>
                 </div>
 
                 <div className="totalCarrinhoCompra">
