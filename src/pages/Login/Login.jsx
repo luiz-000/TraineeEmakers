@@ -1,63 +1,65 @@
-import { React , useState } from 'react';
+import  React from 'react';
 
-import { Link } from 'react-router-dom';
-
-import { useNavigate } from 'react-router-dom';
-import { GoArrowRight } from "react-icons/go";
+import { Link , useNavigate } from 'react-router-dom';
+import Formulários from '../../components/Formulários/Formulários';
 
 import './Login.css';
 
 
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  
   const navigate = useNavigate();
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    navigate('/conta', { state: { userEmail: email } });
-  }
+  const loginCampos = [
+    {
+      type: 'email',
+      name: 'email',
+      placeholder: 'E-mail',
+      required: true
+    },
+    {
+      type: 'password',
+      name: 'password',
+      placeholder: 'Senha',
+      required: true
+    }
+  ];
+
+  const loginLinks = [
+    {
+      component: Link,
+      to: '/registrar',
+      text: 'Criar Conta'
+    },
+    {
+      component: Link,
+      to: '/recuperarConta',
+      text: 'Esqueceu a senha?'
+    }
+  ];
+
+  const handleSubmit = (dadosFormulario) => {
+    navigate('/conta', { state: { userEmail: dadosFormulario.email } });
+  };
 
   return (
-    <div className='container'>
+    <div className='containerLogin'>
+      <section className='containerInternoLogin'>
+        
+        <Formulários
+          titulo='Login'
+          campos={loginCampos}
+          onSubmit={handleSubmit}
+          links={loginLinks}
+        />
 
-      <div className='containerFormulario'>
-
-        <form className='formGroup' onSubmit={handleSubmit}>
-          <h1> Login </h1>
-
-          <div>
-            <input type='email'
-              placeholder='E-mail'
-              required
-              onChange={(event) => setEmail(event.target.value)}>
-            </input>
-
-            <input type='password'
-              placeholder='Senha'
-              required
-              onChange={(event) => setPassword(event.target.value)}>
-            </input>
-          </div>
-
-          <button type='submit' className='butonLogin'>
-            <GoArrowRight className='iconLogin'/>
-          </button>
-        </form>
-
-        <div className='criarContaLink'>
-          <Link to='/registrar'> Criar Conta </Link>
-          <Link to='/recuperarConta'> Esqueceu a senha? </Link>
+        <div className='imagemFundoLogin'>
+          <img loading='lazy' src="/src/assets/imagens/image2.png" alt="Imagem de fundo" />
         </div>
 
-      </div>
-
-      <div className='containerImagemFundo'>
-        <img src='/src/assets/imagens/image2.png'></img>
-      </div>
-
+      </section>
     </div>
-  )
+  );
 }
 
 export default Login
