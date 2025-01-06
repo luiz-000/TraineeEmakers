@@ -1,50 +1,59 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
-import { GoArrowRight } from "react-icons/go";
+import { Link , useNavigate} from 'react-router-dom';
+import Formulários from '../../components/Formulários/Formulários';
 
 import "./RecuperarConta.css";
 
 
 const RecuperarConta = () => {
+    
+    const navigate = useNavigate();
+
+    const recuperarCampos = [
+        {
+            type: 'email',
+            name: 'email',
+            placeholder: 'E-mail',
+            required: true
+        }
+    ];
+
+    const recuperarLinks = [
+        {
+            component: Link,
+            to: '/registrar',
+            text: 'Criar Conta'
+        },
+        {
+            component: Link,
+            to: '/',
+            text: 'Fazer Login'
+        }
+    ];
+
+    const handleSubmit = (dadosFormulario) => {
+        navigate('/', { state: { userEmail: dadosFormulario.email } });
+    };
 
     return (
-        <div className='container'>
+        <div className='containerRecuperarConta'>
+            <section className='containerInternoRecuperar'>
+                
+                <Formulários
+                titulo={'Recuperar Conta'}
+                campos={recuperarCampos}
+                onSubmit={handleSubmit}
+                links={recuperarLinks}
+                />
 
-            <div className='containerRecuperarConta'>
-
-                <form className='formGroup'>
-
-                    <h1> Recuperar </h1>
-                    <h1> Conta </h1>
-
-                    <div>
-                        <input
-                            type='email'
-                            placeholder='E-mail'
-                            required>
-                        </input>
-                    </div>
-
-                </form>
-
-                <div className='butonRecuperar'>
-                    <Link to='/'> <GoArrowRight className='icon'/> </Link>
+                <div className='imagemFundoRecuperarConta'>
+                    <img loading='lazy' src="/src/assets/imagens/image2.png" alt="Imagem de fundo" />
                 </div>
 
-                <div className='links'>
-                    <Link to='/registrar'> Criar Conta </Link>
-                    <Link to='/'> Fazer Login </Link>
-                </div>
-
-            </div>
-
-            <div className='containerImagemFundo'>
-                <img src='/src/assets/imagens/image2.png'></img>
-            </div>
-
+            </section>
         </div>
-    )
+    );
 }
 
 export default RecuperarConta

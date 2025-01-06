@@ -1,84 +1,53 @@
-.container{
-    display: flex;
-    height: 100vh;
+.containerRecuperarConta {
+    width: 100vw;
+    min-height: 100vh;
 
     background-color: #FBF8F4;
 }
 
-.containerRecuperarConta{
-    flex: 2;
+.containerInternoRecuperar {
     display: flex;
-    flex-direction: column;
-    padding: 40px;
-}
-
-.formGroup h1{
-    margin-bottom: 1px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #4B626C;
-    font-size: 64px;
-    font-weight: 400;
-    line-height: 78.02px;
-}
-
-.formGroup input{
+    flex-direction: row;
     width: 100%;
-    padding: 10px;
-    margin-top: 40px;
-    background-color: #EFEFEF;
-    font-size: 18px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0px 4px 20px 0px #00000040;
-    box-sizing: border-box;
+    height: 100%;
 }
 
-.formGroup input::placeholder{
-    color: #97A4A2;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 29.26px;
+.imagemFundoRecuperarConta {
+    width: 70vw;
+    height: 100vh;
 }
 
-.butonRecuperar{
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    margin-top: 20px;
-}
-
-.butonRecuperar a{
-    text-decoration: none;
-    color: #4B626C;
-    font-size: 45px;
-}
-
-.links{
-    display: flex;
-    flex-direction: column;
-    margin-top: auto;
-}
-
-.links a{
-    text-decoration: none;
-    color: #97A4A2;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 35px;
-}
-
-.links a:hover{
-    text-decoration: underline;
-}
-
-.containerImagemFundo{
-    flex: 6;
-}
-
-.containerImagemFundo img{
+.imagemFundoRecuperarConta img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+@media screen and (max-width: 912px) {
+
+    .containerInternoRecuperar {
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    .imagemFundoRecuperarConta {
+        width: 100%;
+        height: 50vh;
+
+        margin: auto;
+    }
+
+    .imagemFundoRecuperarConta img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    .imagemFundoRecuperarConta {
+        height: 35vh;
+    }
 }
