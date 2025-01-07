@@ -1,7 +1,8 @@
 .containerTelaCarrinho {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
 
     background-color: #FBF6F0;
 }
