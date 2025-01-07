@@ -10,7 +10,7 @@ import CarrinhoCompra from '../../components/CarrinhoCompra/CarrinhoCompra';
 
 const Conta = () => {
   return (
-    <div className='container'>
+    <div className='containerConta'>
         
         <NavBar />
         <div className='componenteEsquerdo'> <InformacoesUsuario /> </div>
