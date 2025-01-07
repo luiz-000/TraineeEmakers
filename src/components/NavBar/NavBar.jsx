@@ -15,35 +15,36 @@ const NavBar = () => {
     };
 
     return (
-        <div>
-            <nav className='navBar'>
+        
+        <nav className={`navBar ${openMenu ? 'open' : ''}`}>
 
+            {!openMenu && (
                 <div className="navbarImg">
                     <Link to='/principal'>
                         <img src="/src/assets/imagens/imagem1.png" alt='imagem da logo da empresa'/>
                     </Link>
                 </div>
+            )}
 
-                <ul className={`navbarLinks ${openMenu ? 'open' : ''}`}>
-                    <li> <Link to='/principal'> Lançamentos </Link> </li>
-                    <li> <Link to='/populares'> Populares </Link> </li>
-                    <li> <Link to=''> Gêneros </Link> </li>
-                    <li> <Link to='/principal'> Promoções </Link> </li>
-                    <li> <Link to='/conta'> Conta </Link> </li>
-                </ul>
+            <ul className={`navbarLinks ${openMenu ? 'open' : ''}`}>
+                <li> <Link to='/principal'> Lançamentos </Link> </li>
+                <li> <Link to='/populares'> Populares </Link> </li>
+                <li> <Link to=''> Gêneros </Link> </li>
+                <li> <Link to='/principal'> Promoções </Link> </li>
+                <li> <Link to='/conta'> Conta </Link> </li>
+            </ul>
 
-                <div className="navbarCampoBusca">
-                    <input type="text"/>
-                    <button> <LuSearch className='iconeBusca'/> </button>
-                </div>
+            <div className={`navbarCampoBusca ${openMenu ? 'open' : ''}`}>
+                <input type="text"/>
+                <button> <LuSearch className='iconeBusca'/> </button>
+            </div>
 
-                <button className='buttonMenuNavBar' onClick={toggleMenu}>
-                    {openMenu ? <LuX className='iconeMenuNavBar' /> : <LuMenu className='iconeMenuNavBar'/>}
-                </button>
+            <button className='buttonMenuNavBar' onClick={toggleMenu}>
+                {openMenu ? <LuX className='iconeMenuNavBar' /> : <LuMenu className='iconeMenuNavBar'/>}
+            </button>
 
-            </nav>
-        </div>
-    )
+    </nav>
+    );
 }
 
 export default NavBar
