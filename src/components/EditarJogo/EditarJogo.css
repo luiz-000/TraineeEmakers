@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
 
-    width: 38vw;
+    width: 35vw;
     height: 100%;
 
     background-color: #4B626C;
@@ -13,7 +13,8 @@
     display: flex;
     flex-direction: column;
 
-    gap: 40px;
+    margin-top: 4rem;
+    gap: 25px;
 }
 
 .cardEditarJogo h2 {

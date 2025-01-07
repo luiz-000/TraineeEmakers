@@ -5,11 +5,11 @@ import "./ItensNoCarrinho.css";
 const ItensNoCarrinho = () => {
     return (
         <div className="containerItensNoCarrinho">
-            <h2> Carrinho de Compras </h2>
-
+            
             <div className="itensCarrinhoCompra">
+                <h2> Carrinho de Compras </h2>
 
-               <div className="itemCarrinhoCompra">
+                <div className="itemCarrinhoCompra">
                     <div className="dadosJogoCarrinhoCompra">
                         <p className="nameGameCarrinhoCompra"> Sponge Bob: Battle for BikiniBottom </p>
                         <p className="platGameCarrinhoCompra"> Plataforma: PC </p>

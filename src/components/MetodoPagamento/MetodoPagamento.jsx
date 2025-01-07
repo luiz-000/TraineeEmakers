@@ -25,7 +25,7 @@ const MetodoPagamento = () => {
 
                 <div className='itemMetodoPagamento'>
                     <input name='termoCondicao' value="aceito" type='radio' />
-                    <label className='termosMetodoPagamento'> Eu aceito os termos e condições </label>
+                    <p className='termosMetodoPagamento'> Eu aceito os termos e condições </p>
                 </div>
 
                 <div className='itemMetodoPagamento'>
