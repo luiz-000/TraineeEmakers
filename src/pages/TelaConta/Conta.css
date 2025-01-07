@@ -1,7 +1,9 @@
 .container {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    
+    width: 100vw;
+    min-height: 100vh;
 }
 
 .componenteEsquerdo {
@@ -19,4 +21,17 @@
     bottom: 20px;
     right: 20px;
     z-index: 1000;
+}
+
+
+@media screen and (max-width: 912px) {
+    .container {
+        
+        flex-direction: column;
+        
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
 }

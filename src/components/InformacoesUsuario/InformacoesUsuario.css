@@ -71,3 +71,43 @@
     background-color: transparent;
     margin-left: 20px;
 }
+
+
+@media screen and (max-width: 912px) {
+
+    .containerEsquerdo {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .dadosUsuario {
+        margin-top: -15rem;
+    }
+
+    .dadosUsuario h1{
+        margin: auto;
+        margin-bottom: 1rem;
+
+        font-size: 32px;
+        line-height: 29.26px;
+    }
+
+    .dadosUsuario p {
+        font-size: 26px;
+        line-height: 24.38px;
+
+        margin-bottom: 1.5rem;
+    }
+
+    .dadosUsuario button , .dadosUsuario a{
+        margin: 0.5rem auto;
+
+        font-size: 22px;
+        line-height: 24.38px;
+
+        width: 220.71px;
+        height: 40.62px;
+
+        text-align: center;
+    }
+}
