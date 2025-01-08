@@ -98,3 +98,73 @@
 .infosJogos a:hover {
     text-decoration: underline;
 }
+
+
+
+@media screen and (max-width: 912px) {
+    
+    .containerJogosPopulares {
+        display: flex;
+        flex-direction: column;
+
+        margin: auto;
+    }
+
+    .containerJogosPopulares h2 {
+        padding-left: 3rem;
+        padding-bottom: 0.5rem;
+
+        font-size: 28px;
+        line-height: 29.26px;
+    }
+
+    .layoutPopulares {
+        display: flex;
+        flex-direction: column;
+        
+        gap: 1rem;
+        margin: auto;
+    }
+
+    .layoutPopulares:nth-child(3) .infosJogos {
+        order: 2;
+    }
+
+    .imagemJogosPopulares img {
+        width: 322px;
+        height: 190px;
+    }
+
+    .infosJogos p{
+        font-size: 18px;
+        line-height: 21.07px;
+    }
+
+    .infosJogos h3 , .infosJogos a {
+        font-size: 25px;
+        line-height: 19.5px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    
+    .containerJogosPopulares h2 {
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+
+    .imagemJogosPopulares img {
+        width: 305px;
+        height: 173px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .containerJogosPopulares {
+        display: flex;
+        flex-direction: column;
+
+        margin: auto;
+    }
+}
