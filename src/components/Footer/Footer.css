@@ -197,4 +197,15 @@
     .containerFooter {
         height: auto;
     }
+
+    .coluna1 h3 {
+        font-size: 30px;
+        line-height: 40.88px;
+        
+    }
+    
+    .coluna1 p {
+        font-size: 28px;
+        line-height: 35.01px;
+    }
 }
