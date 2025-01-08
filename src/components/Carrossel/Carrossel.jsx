@@ -1,4 +1,4 @@
-import React from 'react';
+import { React , useState , useEffect } from 'react';
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -50,7 +50,7 @@ const Carrossel = () => {
     },
     {
       imgEsquerda1: 'src/assets/imagens/imagemJogoOri.avif',
-      imgEsquerda2: 'src/assets/imagens/imagemJogoRedDead.png',
+      imgEsquerda2: 'src/assets/imagens/imagemJogoMine.jpg',
       imgDireita: 'src/assets/imagens/imagemJogoTLU.webp',
       precoEsq1: 'R$ 115,00',
       descontoEsq1: '-30%',
@@ -61,12 +61,46 @@ const Carrossel = () => {
     },
   ];
 
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleRezise = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleRezise);
+    return () => window.removeEventListener('resize', handleRezise);
+  }, []);
+
+  const getSlides = () => {
+    if(windowWidth <= 912) {
+      return slides.flatMap(slide => [
+        {img: slide.imgDireita , preco: slide.precoDireita , desconto: slide.descontoDireita},
+        {img: slide.imgEsquerda1 , preco: slide.precoEsq1 , desconto: slide.descontoEsq1},
+        {img: slide.imgEsquerda2 , preco: slide.precoEsq2 , desconto: slide.descontoEsq2}
+      ]);
+    }
+    return slides;
+  }
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+
+    responsive: [
+      {
+        breakpoint: 912,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+    ],
 
     nextArrow: <SampleNextArrowCarrossel />,
     prevArrow: <SamplePrevArrowCarrossel />
@@ -76,44 +110,66 @@ const Carrossel = () => {
     <div className='containerCarrossel'>
       <Slider {...settings}>
 
-        {slides.map((slide, index) => (
-          
-          <div key={index}>
-            <div className='grid'>
+        {windowWidth <= 912 ? (
+          getSlides().map((slide, index) => (
 
-              <div className='direito'>
-                <Link to = {slide.imgDireita === 'src/assets/imagens/imagemJogoGod2.png' ? '/jogo' : '#'} >
-                  <img loading='lazy' src={slide.imgDireita} alt='imagem de um jogo no carrosel principal'></img>
-                </Link>
+            <div key={index}>
+              <div className='grid'>
 
-                <div className='textoDireito'>
-                  <p className='desconto'> {slide.descontoDireita} </p>
-                  <p className='preco'> {slide.precoDireita} </p>
+                <div className='jogosCarrosselResponsivo'>
+                  <img loading='lazy' src={slide.img} alt="imagem de um jogo no carrosel principal"></img>
+
+                  <div className='textoJogosCarrosselResponsivo'>
+                    <p className='desconto'> {slide.desconto} </p>
+                    <p className='preco'> {slide.preco} </p>
+                  </div>
+
                 </div>
               </div>
-
-              <div className='esquerdo'>
-                <img loading='lazy' src={slide.imgEsquerda1} alt='imagem de um jogo no carrosel principal'></img>
-
-                <div className='textoEsquerdo'>
-                  <p className='desconto'> {slide.descontoEsq1} </p>
-                  <p className='preco'> {slide.precoEsq1} </p>
-                </div>
-              </div>
-            
-              <div className='esquerdo'>
-                <img loading='lazy' src={slide.imgEsquerda2} alt='imagem de um jogo no carrosel principal'></img>
-
-                <div className='textoEsquerdo'>
-                  <p className='desconto'> {slide.descontoEsq2} </p>
-                  <p className='preco'> {slide.precoEsq2} </p>
-                </div>
-              </div>
-
             </div>
-          </div>
+          ))
+        
+        ) : (
 
-        ))}
+          slides.map((slide, index) => (
+            
+            <div key={index}>
+              <div className='grid'>
+
+                <div className='direito'>
+                  <Link to = {slide.imgDireita === 'src/assets/imagens/imagemJogoGod2.png' ? '/jogo' : '#'} >
+                    <img loading='lazy' src={slide.imgDireita} alt='imagem de um jogo no carrosel principal'></img>
+                  </Link>
+
+                  <div className='textoDireito'>
+                    <p className='desconto'> {slide.descontoDireita} </p>
+                    <p className='preco'> {slide.precoDireita} </p>
+                  </div>
+                </div>
+
+                <div className='esquerdo'>
+                  <img loading='lazy' src={slide.imgEsquerda1} alt='imagem de um jogo no carrosel principal'></img>
+
+                  <div className='textoEsquerdo'>
+                    <p className='desconto'> {slide.descontoEsq1} </p>
+                    <p className='preco'> {slide.precoEsq1} </p>
+                  </div>
+                </div>
+              
+                <div className='esquerdo'>
+                  <img loading='lazy' src={slide.imgEsquerda2} alt='imagem de um jogo no carrosel principal'></img>
+
+                  <div className='textoEsquerdo'>
+                    <p className='desconto'> {slide.descontoEsq2} </p>
+                    <p className='preco'> {slide.precoEsq2} </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          ))
+        )}
         
       </Slider>
     </div>

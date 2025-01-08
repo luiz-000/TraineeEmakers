@@ -104,3 +104,89 @@
 .iconeAvancarSlideCarrosselLancamento {
     left: 100%;
 }
+
+
+@media screen and (max-width: 912px) {
+
+    .containerCarrosselLancamentos {
+        height: auto;
+    }
+
+    .items {
+        margin: 0 auto;
+        padding-bottom: 2rem;
+        
+        max-width: 300px;
+        position: relative;
+    }
+
+    .items h1{
+        position: relative;
+        text-align: left;
+        
+        padding: 1.5rem 0 0 0;
+        
+        font-size: 28px;
+        line-height: 29.26px;
+    }
+
+    .precoJogoLancamento {
+        bottom: 8px;
+        margin-left: 10px;
+    }
+
+    .fundo {
+        padding-left: 2rem;
+        background-color: transparent;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+  
+    .items {
+        margin: auto;
+        
+        max-width: 250px;
+        position: relative;
+    }
+
+    .fundo {
+        padding-left: 2.5rem;
+    }
+
+    .items h1{
+        font-size: 22px;
+    }
+
+    .images{
+        width: 120px;
+        height: 180px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .containerCarrosselLancamentos {
+        height: auto;
+    }
+
+    .items {
+        padding-bottom: 2rem;
+        position: relative;
+    }
+
+    .items h1{
+        position: relative;
+        
+        padding: 1rem 0 0 0;
+        font-size: 32px;
+        line-height: 29.26px;
+    }
+
+    .fundo {
+        padding-left: 2rem;
+        background-color: transparent;
+    }
+}

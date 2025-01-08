@@ -1,4 +1,4 @@
-import React from 'react'
+import { React ,useState , useEffect } from 'react'
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -31,11 +31,28 @@ const CarrosselLancamentos = () => {
         'src/assets/imagens/imagemJogoPerish.png',
     ];
 
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleRezise = () => {
+        setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleRezise);
+        return () => window.removeEventListener('resize', handleRezise);
+    }, []);
+
+    const getSlidesToShow = () => {
+        if(windowWidth <= 912)  return 1;
+        if(windowWidth <= 1024) return 3;
+        return 5;
+    };
+
     const settings = {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 5,
+        slidesToShow: getSlidesToShow(),
         slidesToScroll: 1,
 
         nextArrow: <SampleNextArrowCarrosselLancamento />,
