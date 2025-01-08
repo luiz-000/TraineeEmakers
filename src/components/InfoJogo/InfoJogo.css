@@ -1,7 +1,7 @@
 .containerInfoJogo {
     position: relative;
 
-    top: 21vh;
+    top: 23vh;
     width: auto;
     height: auto;
 
@@ -60,11 +60,11 @@
 
 .valoresInfoJogo {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     
     width: 180px;
     height: 30px;
-    right: 55px;
+    right: 40px;
 
     display: flex;
     justify-content: space-between;
