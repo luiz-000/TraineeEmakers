@@ -3,7 +3,7 @@
     
     width: 42vw;
     height: 100vh;
-    top: 16vh;
+    top: 20vh;
 
     display: flex;
     flex-direction: column;
@@ -105,4 +105,40 @@
     color: #4B626C;
 
     padding-left: 2rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .containerMetodoPagamento {
+        width: 100vw;
+        top: 0vh;
+        padding-bottom: 2rem;
+    }
+
+    .cardMetodoPagamento h2 {
+        font-size: 24px;
+        line-height: 29.26px;
+
+        padding-top: 2rem;
+    }
+    
+    .itensMetodoPagamento {
+        margin-top: 2rem;
+        gap: 3rem;
+    }
+
+    .itemMetodoPagamento {
+        width: 100vw;
+    }
+    
+    .itemMetodoPagamento hr{
+        width: 90%;
+    }
+    
+    .termosMetodoPagamento {
+        font-size: 18px;
+        line-height: 19.5px;
+    
+        padding-left: 0rem;
+    }
 }
