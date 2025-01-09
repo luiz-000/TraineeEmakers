@@ -23,14 +23,32 @@
 }
 
 
-@media screen and (max-width: 912px) {
+
+@media screen and (max-width: 1024px) {
     
-    .containerPagePrincipal {
-        flex-direction: column;
+    .carrinhoCompraTelaPrincipal {
         
-        width: 100vw;
-        height: 100vh;
-        overflow-y: auto;
-        overflow-x: hidden;
+        top: 7.5rem;
+        right: 1.5rem;
+        z-index: 100;
+    }
+}
+
+
+@media screen and (max-width: 912px) {
+
+    .carrinhoCompraTelaPrincipal {
+        
+        top: 7.5rem;
+        right: 2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .carrinhoCompraTelaPrincipal {
+        
+        top: 7.5rem;
+        right: 1rem;
     }
 }

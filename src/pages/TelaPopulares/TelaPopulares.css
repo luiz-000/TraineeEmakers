@@ -21,3 +21,33 @@
     right: 5rem;
     z-index: 100;
 }
+
+
+@media screen and (max-width: 1024px) {
+    
+    .carrinhoCompraTelaPopulares {
+        
+        top: 8rem;
+        right: 1.5rem;
+        z-index: 100;
+    }
+}
+
+
+@media screen and (max-width: 912px) {
+
+    .carrinhoCompraTelaPopulares {
+        
+        top: 8rem;
+        right: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .carrinhoCompraTelaPopulares {
+        
+        top: 8rem;
+        right: 1rem;
+    }
+}

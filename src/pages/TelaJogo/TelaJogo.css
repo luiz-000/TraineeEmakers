@@ -22,14 +22,34 @@
     z-index: 100;
 }
 
+
+
 @media screen and (max-width: 912px) {
+    
     .containerTelaJogo {
-        
         flex-direction: column;
         
         width: 100vw;
-        height: 100vh;
-        overflow-y: auto;
-        overflow-x: hidden;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    
+    .CarrinhoCompraTelaJogo {
+        
+        top: 8.5rem;
+        right: 1.5rem;
+        z-index: 100;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .CarrinhoCompraTelaJogo {
+        
+        top: 8.5rem;
+        right: 0.5rem;
     }
 }

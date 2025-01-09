@@ -15,7 +15,12 @@ const Conta = () => {
         <NavBar />
         <div className='componenteEsquerdo'> <InformacoesUsuario /> </div>
         <div className='componenteDireito'> <JogosAdquiridos /> </div>
-        <div className='componentesCarrinhoCompra'> <CarrinhoCompra /> </div>
+        
+        <div className='posicaoCarrinhoCompraTelaConta'>
+          <div className='carrinhoCompraTelaConta'>
+            <CarrinhoCompra />
+          </div>
+        </div>
 
     </div>
   )
