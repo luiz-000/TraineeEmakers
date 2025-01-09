@@ -6,3 +6,17 @@
 
     background-color: #FBF6F0;
 }
+
+
+@media screen and (max-width: 1024px) {
+    
+    .containerTelaCarrinho {
+        
+        flex-direction: column;
+        
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+}
