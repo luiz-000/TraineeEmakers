@@ -21,7 +21,7 @@
 }
 
 .itensCarrinhoCompra h2 {
-    margin-left: -20rem;
+    margin-left: -15rem;
 
     font-weight: 500;
     font-size: 36px;
@@ -100,9 +100,95 @@
     border-top: 2px solid #FBF6F0;
 }
 
+@media screen and (max-width: 1024px) {
+    .containerItensNoCarrinho {
+        width: 100vw;
+        min-height: auto;
+    }
 
-@media screen and (max-width: 1200px) {
+    .itensCarrinhoCompra {
+        height: 100%;
+        padding-top: 8rem;
+        margin-bottom: 2rem;
+    }
+
     .itensCarrinhoCompra h2 {
-        margin-left: 0;
+        margin-left: -1.5rem;
+    }
+}
+
+@media screen and (max-width: 912px) {
+
+    .itensCarrinhoCompra h2 {
+        margin-left: -8.5rem;
+
+        font-size: 24px;
+        line-height: 29.26px;
+    }
+
+    .nameGameCarrinhoCompra{
+
+        font-size: 18px;
+        line-height: 20.5px;
+    }
+    
+    .platGameCarrinhoCompra {
+        
+        font-size: 15px;
+        line-height: 25.63px;
+    }
+    
+    .priceGameCarrinhoCompra {
+        
+        font-size: 25px;
+        line-height: 30.26px;
+    }
+
+    .totalCarrinhoCompra {
+        margin-top: 2rem;
+        
+        font-size: 28px;
+        line-height: 30.26px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .itensCarrinhoCompra h2 {
+        margin-left: -7.5rem;
+
+        font-size: 22px;
+        line-height: 25.26px;
+    }
+
+    .nameGameCarrinhoCompra{
+
+        font-size: 16px;
+        line-height: 18.5px;
+    }
+    
+    .platGameCarrinhoCompra {
+        
+        font-size: 15px;
+        line-height: 20.63px;
+    }
+    
+    .priceGameCarrinhoCompra {
+        
+        font-size: 21px;
+        line-height: 30.26px;
+    }
+
+    .totalCarrinhoCompra {
+        width: 22.5rem;
+        margin-top: 2rem;
+        
+        font-size: 21px;
+        line-height: 30.26px;
+    }
+
+    .itensCarrinhoCompra img {
+        width: 120px;
+        height: 180px;
     }
 }
