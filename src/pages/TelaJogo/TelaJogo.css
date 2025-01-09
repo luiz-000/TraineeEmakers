@@ -21,3 +21,15 @@
     right: 2rem;
     z-index: 100;
 }
+
+@media screen and (max-width: 912px) {
+    .containerTelaJogo {
+        
+        flex-direction: column;
+        
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+}
