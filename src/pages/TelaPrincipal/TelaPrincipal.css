@@ -23,6 +23,22 @@
 }
 
 
+@media screen and (min-width: 1600px) {
+    
+    .carrinhoCompraTelaPrincipal {
+        top: 9rem;
+        right: 5rem;
+    }
+}
+
+@media screen and (max-width: 1599px){
+    
+    .carrinhoCompraTelaPrincipal {
+        top: 2rem;
+        right: 2rem;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     
     .carrinhoCompraTelaPrincipal {
@@ -37,7 +53,7 @@
 
     .carrinhoCompraTelaPrincipal {
         
-        top: 7.5rem;
+        top: 4rem;
         right: 2rem;
     }
 }

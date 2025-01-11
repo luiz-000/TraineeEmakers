@@ -17,37 +17,88 @@
     position: absolute;
     width: 50px;
     height: 70px;
-    top: 5rem;
-    right: 5rem;
+    top: 2rem;
+    right: 1rem;
     z-index: 100;
 }
 
 
-@media screen and (max-width: 1024px) {
-    
-    .carrinhoCompraTelaPopulares {
-        
+@media screen and (min-width: 1600px) {
+
+    .posicaoCompraTelaPopulares {
         top: 8rem;
-        right: 1.5rem;
-        z-index: 100;
+        right: 4rem;
     }
 }
 
+@media screen and (max-width: 1599px)   {
+
+    .posicaoCompraTelaPopulares {
+        top: 8rem;
+        right: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1555px)   {
+
+    .posicaoCompraTelaPopulares {
+        top: 1rem;
+        right: 1rem;
+    }
+}
+
+@media screen and (max-width: 1550px)   {
+
+    .posicaoCompraTelaPopulares {
+        top: 9rem;
+        right: 5rem;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    
+    .carrinhoCompraTelaPopulares {
+        top: 5rem;
+        right: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    
+    .carrinhoCompraTelaPopulares {
+        top: 1rem;
+        right: -1rem;
+    }
+}
 
 @media screen and (max-width: 912px) {
 
     .carrinhoCompraTelaPopulares {
-        
-        top: 8rem;
-        right: 1rem;
+        top: -1rem;
+        right: 0rem;
+    }
+}
+
+@media screen and (max-width: 790px) {
+
+    .carrinhoCompraTelaPopulares {
+        top: -1rem;
+        right: 0rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .carrinhoCompraTelaPopulares {
+        top: -2rem;
+        right: -2rem;
     }
 }
 
 @media screen and (max-width: 400px) {
 
     .carrinhoCompraTelaPopulares {
-        
-        top: 8rem;
-        right: 1rem;
+        top: -2rem;
+        right: -2rem;
     }
 }

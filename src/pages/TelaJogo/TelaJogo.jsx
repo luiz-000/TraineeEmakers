@@ -10,16 +10,16 @@ import Footer from '../../components/Footer/Footer';
 const TelaJogo = () => {
   return (
     <div className='containerTelaJogo'>
-      <NavBar />
-      <InfoJogo />
-      
-      <div className='posicaoCarrinhoCompraTelaJogo'>
-        <div className='CarrinhoCompraTelaJogo'>
-          <CarrinhoCompra />
+        <NavBar />
+        <InfoJogo />
+        
+        <div className='posicaoCarrinhoCompraTelaJogo'>
+          <div className='CarrinhoCompraTelaJogo'>
+            <CarrinhoCompra />
+          </div>
         </div>
-      </div>
 
-      <Footer />
+        <Footer />
     </div>
   )
 }

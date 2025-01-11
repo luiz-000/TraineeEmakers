@@ -1,5 +1,4 @@
 .containerTelaJogo {
-    
     display: flex;
     flex-direction: column;
 
@@ -18,27 +17,55 @@
     position: absolute;
     width: 75px;
     height: 75px;
-    top: 6rem;
+    top: 3rem;
     right: 2rem;
     z-index: 100;
 }
 
 
-@media screen and (max-width: 1024px) {
-    
+@media screen and (min-width: 1600px) {
     .CarrinhoCompraTelaJogo {
-        
-        top: 8.5rem;
-        right: 1.5rem;
-        z-index: 100;
+        top: 15rem;
+        right: 3rem;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1599px)   {
 
     .CarrinhoCompraTelaJogo {
-        
-        top: 8.5rem;
-        right: 0.5rem;
+        top: 20rem;
+        right: 2rem;
+    }
+}
+
+@media screen and (max-width: 1555px)   {
+
+    .CarrinhoCompraTelaJogo {
+        top: 3rem;
+        right: 2rem;
+    }
+}
+
+@media screen and (max-width: 1554px)   {
+
+    .CarrinhoCompraTelaJogo {
+        top: 20rem;
+        right: 2rem;
+    }
+}
+
+@media screen and (max-width: 1400px)   {
+
+    .CarrinhoCompraTelaJogo {
+        top: 5rem;
+        right: 2rem;
+    }
+}
+
+@media screen and (max-width: 700px)   {
+
+    .CarrinhoCompraTelaJogo {
+        top: 2rem;
+        right: 2rem;
     }
 }
