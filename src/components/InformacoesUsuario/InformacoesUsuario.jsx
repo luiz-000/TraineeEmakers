@@ -1,6 +1,6 @@
-import React from 'react'
+import { React , useEffect , useState } from 'react';
 
-import { Link , useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { MdModeEdit } from "react-icons/md";
 import { RiDeleteBin5Line } from "react-icons/ri";
 
@@ -8,14 +8,20 @@ import './InformacoesUsuario.css'
 
 const InformacoesUsuario = () => {
 
-  const location = useLocation();
-  const userEmail = location.state?.userEmail;
+  const [userEmail, setUserEmail] = useState('');
+
+  useEffect(() => {
+    const email = localStorage.getItem('userEmail');
+    if(email) {
+      setUserEmail(email);
+    }
+  }, []);
 
   return (
     <div className='containerEsquerdo'>
 
       <div className='dadosUsuario'>
-        <h1> Olá, {userEmail} </h1>
+        {userEmail && ( <h1> Olá: {userEmail} </h1> )}
         <p> Seu email é {userEmail} </p>
         <p> Seu CPF é 123.456.789-00 </p>
 

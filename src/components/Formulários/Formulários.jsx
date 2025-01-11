@@ -1,5 +1,7 @@
 import { React , useState } from 'react';
 
+import { useNavigate } from 'react-router-dom';
+
 import { GoArrowRight } from "react-icons/go";
 
 import './Formulários.css'
@@ -12,13 +14,31 @@ const Formulários = ({
     links,
     submitButtonIcon = <GoArrowRight />
 }) => {
+    const navigate = useNavigate();
+
     const [dadosFormulario, setDadosFormulario] = useState (
         campos.reduce((acc, campo) => ({...acc, [campo.name]: '' }), {})
     );
 
+    const handleInputChange = (event) => {
+        const { name, value } = event.target;
+        setDadosFormulario(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+
     const handleSubmit = (event) => {
         event.preventDefault();
-        onSubmit(dadosFormulario);
+
+        const emailValue = dadosFormulario.email;
+        localStorage.setItem('userEmail', emailValue);
+
+        if(onSubmit) {
+            onSubmit(dadosFormulario);
+        }
+
+        navigate('/conta');
     };
 
   return (
@@ -36,6 +56,8 @@ const Formulários = ({
                         name={campo.name}
                         placeholder={campo.placeholder}
                         required={campo.required}
+                        value={dadosFormulario[campo.name]}
+                        onChange={handleInputChange}
                     />
                 ))}
                 
