@@ -130,6 +130,7 @@
         flex-direction: column;
 
         margin: auto;
+        padding-bottom: 5rem;
     }
 
     .containerJogosPopulares h2 {

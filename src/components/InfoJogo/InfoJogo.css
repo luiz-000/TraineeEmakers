@@ -5,7 +5,8 @@
     width: auto;
     height: auto;
 
-    margin: 0px 70px 100px 70px;
+    margin: 0px 109px 50px;
+    margin-bottom: 9rem;
 }
 
 .layoutInfoJogo {
@@ -206,7 +207,7 @@
 @media screen and (min-width: 1600px) {
     
     .containerInfoJogo {
-        top: 15vh;
+        top: 20vh;
     }
     
     .porcentagemInfoJogo {
@@ -281,6 +282,7 @@
         box-shadow: 0px 0px 15px 15px #a7a6a6;
 
         margin: auto;
+        margin-bottom: 10rem;
     }
     
     .imagemInfoJogo {

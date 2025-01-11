@@ -7,7 +7,7 @@
 
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 4rem;
+    padding-bottom: 10rem;
 
     background-color: #4B626C;
 }
@@ -134,11 +134,8 @@
  
 @media screen and (max-width: 925px) {
 
-    .containerCarrosselLancamentos {
-        padding-bottom: 2rem;
-    }
-
     .items {
+        padding-top: 3rem;
         margin: 0 auto;
         padding-bottom: 2rem;
         
@@ -168,7 +165,7 @@
 }
 
 @media screen and (max-width: 400px) {
-  
+
     .items {
         margin: auto;
         
