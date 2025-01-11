@@ -3,10 +3,11 @@
     
     top: 21vh;
     width: 100vw;
-    height: 47vh;
+    height: auto;
 
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 4rem;
 
     background-color: #4B626C;
 }
@@ -106,10 +107,35 @@
 }
 
 
-@media screen and (max-width: 912px) {
+@media screen and (min-width: 1600px) {
+
+    .images{
+        width: 240px;
+        height: 300px;
+    }
+
+    .precoJogoLancamento {
+        width: 100px;
+        height: 35px;
+    }
+
+    .precoJogoLancamento p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .fundo {
+        padding-left: 3rem;
+        background-color: transparent;
+    }
+}
+ 
+@media screen and (max-width: 925px) {
 
     .containerCarrosselLancamentos {
-        height: auto;
+        padding-bottom: 2rem;
     }
 
     .items {
@@ -141,7 +167,6 @@
     }
 }
 
-
 @media screen and (max-width: 400px) {
   
     .items {
@@ -162,31 +187,5 @@
     .images{
         width: 120px;
         height: 180px;
-    }
-}
-
-
-@media screen and (max-width: 1024px) {
-
-    .containerCarrosselLancamentos {
-        height: auto;
-    }
-
-    .items {
-        padding-bottom: 2rem;
-        position: relative;
-    }
-
-    .items h1{
-        position: relative;
-        
-        padding: 1rem 0 0 0;
-        font-size: 32px;
-        line-height: 29.26px;
-    }
-
-    .fundo {
-        padding-left: 2rem;
-        background-color: transparent;
     }
 }

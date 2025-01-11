@@ -16,12 +16,8 @@ const Conta = () => {
         <div className='componenteEsquerdo'> <InformacoesUsuario /> </div>
         <div className='componenteDireito'> <JogosAdquiridos /> </div>
         
-        <div className='posicaoCarrinhoCompraTelaConta'>
-          <div className='carrinhoCompraTelaConta'>
-            <CarrinhoCompra />
-          </div>
-        </div>
-
+        <div className='carrinhoCompraTelaConta'> <CarrinhoCompra /> </div>
+        
     </div>
   )
 }

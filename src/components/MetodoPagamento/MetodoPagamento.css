@@ -108,7 +108,61 @@
 }
 
 
+@media screen and (min-width: 1600px) {
+    
+    .containerMetodoPagamento {
+        top: 0;
+        justify-content: center;
+    }
+
+    .cardMetodoPagamento h2 {
+        font-size: 60px;
+        line-height: 50.88px;
+    }
+    
+    .itensMetodoPagamento {
+        gap: 7rem;
+    }
+    
+    .itemMetodoPagamento {
+        width: 30vw;
+        font-size: 60px;    
+    }
+    
+    .itemMetodoPagamento img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .itemMetodoPagamento button{
+        width: 310px;
+        height: 65px;
+
+        font-size: 27px;
+    }
+    
+    .iconeFinalizarMetodoPagamento {
+        width: 35px;
+        height: 30px;
+    }
+    
+    .termosMetodoPagamento {
+        font-size: 35px;
+        line-height: 50px;
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 1599px) {
+
+    .containerMetodoPagamento {
+        top: 0;
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width: 1024px) {
+    
     .containerMetodoPagamento {
         width: 100vw;
         top: 0vh;

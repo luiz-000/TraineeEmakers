@@ -3,7 +3,9 @@
     
     top: 20vh;
     width: 85vw;
-    height: 65vh;
+    height: auto;
+    
+    margin-bottom: 4rem;
 
     margin-left: auto;
     margin-right: auto;
@@ -132,12 +134,25 @@
     left: 100%;
 }
 
-@media screen and (max-width: 912px) {
+
+@media screen and (min-width: 1600px) {
 
     .containerCarrossel {
+        top: 12vh;
         height: auto;
+
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .containerCarrossel {
         margin-bottom: 2rem;
     }
+}
+
+@media screen and (max-width: 912px) {
 
     .grid {
         display: grid;
@@ -179,12 +194,5 @@
 
     .iconeVoltarSlideCarrossel, .iconeAvancarSlideCarrossel {
         font-size: 38px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .containerCarrossel {
-        height: auto;
-        margin-bottom: 2rem;
     }
 }

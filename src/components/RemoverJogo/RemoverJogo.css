@@ -1,6 +1,6 @@
 .containerRemoverJogo {
     position: relative;
-    top: 20vh;
+    top: 23vh;
 
     display: flex;
     justify-content: center;
@@ -71,7 +71,46 @@
 }
 
 
+@media screen and (min-width: 1750px) {
+    
+    .cardRemoverJogo h2 {
+        font-size: 55px;
+        line-height: 39.01px;
+
+        margin-bottom: 1.5rem;
+    }
+    
+    .cardRemoverJogo input {
+        width: 530px;
+        height: 70px;
+        
+        font-size: 30px;
+        line-height: 19.5px;
+    }
+
+    .cardRemoverJogo button {
+        width: 350px;
+        height: 60px;
+
+        font-size: 35px;
+        line-height: 26.38px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .cardRemoverJogo input {
+        width: 280px;
+        height: 40px;
+    }
+    
+    .cardRemoverJogo button {
+        width: 158px;
+    }
+}
+
 @media screen and (max-width: 912px) {
+    
     .containerRemoverJogo {
         top: 0;
 
@@ -95,36 +134,23 @@
         width: 390px;
         height: 33px;
                 
-        font-size: 16px;
-        line-height: 19.5px;
+        font-size: 20px;
+        line-height: 20.5px;
     }
     
     .cardRemoverJogo button {
         width: 188px;
         height: 42px;
         
-        font-size: 20px;
+        font-size: 22px;
         line-height: 24.38px;
     }
 }
-
 
 @media screen and (max-width: 400px) {
     
     .cardRemoverJogo input {
         width: 340px;
-    }
-    
-    .cardRemoverJogo button {
-        width: 158px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    
-    .cardRemoverJogo input {
-        width: 280px;
-        height: 40px;
     }
     
     .cardRemoverJogo button {

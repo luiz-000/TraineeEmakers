@@ -85,6 +85,66 @@
 }
 
 
+@media screen and (min-width: 1750px) {
+    
+    .cardCadastrarJogo h2 {    
+        font-size: 55px;
+        line-height: 30.26px;
+
+        margin-bottom: 1.5rem;
+    }
+
+    .cardCadastrarJogo input , .campoImgCadastrarJogo{
+        width: 600px;
+        height: 70px;
+    
+        font-size: 30px;
+        line-height: 19.5px;
+    }
+
+    .cardCadastrarJogo button {
+        width: 350px;
+        height: 60px;
+    
+        font-size: 35px;
+        line-height: 26.38px;
+    }
+
+    #campoDescricaoCadastrarJogo {
+        width: 600px;
+        height: 150px;
+    }
+
+    .campoImgCadastrarJogo {
+        width: 250px;
+        height: 55px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .cardCadastrarJogo input , .campoImgCadastrarJogo{
+        width: 320px;
+        margin: auto;
+        height: 40px;
+    }
+
+    .cardCadastrarJogo button {
+        width: 178px;
+        height: 45px;
+    }
+
+    #campoDescricaoCadastrarJogo {
+        width: 320px;
+        height: 80px;
+    }
+
+    .campoImgCadastrarJogo {
+        width: 195px;
+        height: 45px;
+    }
+}
+
 @media screen and (max-width: 912px) {
 
     .containerCadastrarJogo {
@@ -111,7 +171,7 @@
         width: 390px;
         height: 33px;
     
-        font-size: 16px;
+        font-size: 20px;
         line-height: 19.5px;
     }
 
@@ -119,11 +179,12 @@
         width: 188px;
         height: 42px;
     
-        font-size: 20px;
+        font-size: 22px;
         line-height: 24.38px;
     }
 
     #campoDescricaoCadastrarJogo {
+        width: 390px;
         height: 99px;
     }
 
@@ -132,7 +193,6 @@
         height: 33px;
     }
 }
-
 
 @media screen and (max-width: 400px) {
 
@@ -155,29 +215,5 @@
 
     .campoImgCadastrarJogo {
         width: 135px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    
-    .cardCadastrarJogo input , .campoImgCadastrarJogo{
-        width: 320px;
-        margin: auto;
-        height: 40px;
-    }
-
-    .cardCadastrarJogo button {
-        width: 178px;
-        height: 45px;
-    }
-
-    #campoDescricaoCadastrarJogo {
-        width: 320px;
-        height: 80px;
-    }
-
-    .campoImgCadastrarJogo {
-        width: 195px;
-        height: 45px;
     }
 }

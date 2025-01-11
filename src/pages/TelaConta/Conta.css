@@ -14,10 +14,6 @@
     flex: 4.5;
 }
 
-.posicaoCarrinhoCompraTelaConta {
-    position: relative;
-}
-
 .carrinhoCompraTelaConta {
     position: absolute;
     width: 50px;
@@ -39,9 +35,4 @@
         overflow-x: hidden;
     }
     
-    .carrinhoCompraTelaConta {
-
-        bottom: 61.5rem;
-        z-index: 100;
-    }
 }

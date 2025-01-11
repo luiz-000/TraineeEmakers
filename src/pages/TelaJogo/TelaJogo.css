@@ -1,12 +1,13 @@
 .containerTelaJogo {
+    
     display: flex;
     flex-direction: column;
-
-    background-color: #FBF6F0;
 
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
+
+    background-color: #FBF6F0;
 }
 
 .posicaoCarrinhoCompraTelaJogo {
@@ -23,17 +24,6 @@
 }
 
 
-
-@media screen and (max-width: 912px) {
-    
-    .containerTelaJogo {
-        flex-direction: column;
-        
-        width: 100vw;
-    }
-}
-
-
 @media screen and (max-width: 1024px) {
     
     .CarrinhoCompraTelaJogo {
@@ -43,7 +33,6 @@
         z-index: 100;
     }
 }
-
 
 @media screen and (max-width: 400px) {
 

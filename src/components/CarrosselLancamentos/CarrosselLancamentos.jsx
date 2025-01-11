@@ -43,8 +43,8 @@ const CarrosselLancamentos = () => {
     }, []);
 
     const getSlidesToShow = () => {
-        if(windowWidth <= 912)  return 1;
-        if(windowWidth <= 1024) return 3;
+        if(windowWidth <= 925)  return 1;
+        if(windowWidth <= 1200) return 3;
         return 5;
     };
 

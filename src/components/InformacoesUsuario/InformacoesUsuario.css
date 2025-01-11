@@ -73,11 +73,49 @@
 }
 
 
+@media screen and (min-width: 1600px) {
+    
+    .dadosUsuario h1{
+        margin-bottom: 3rem;
+
+        font-size: 70px;
+        line-height: 32.26px;
+    }
+
+    .dadosUsuario p {
+        font-size: 50px;
+        line-height: 28.38px;
+
+        margin-bottom: 1.5rem;
+    }
+
+    .dadosUsuario button , .dadosUsuario a{
+        font-size: 33px;
+        line-height: 24.38px;
+
+        width: 400px;
+        height: 65px;
+
+        text-align: center;
+    }
+
+    .iconeEditar {
+        width: 40px;
+        height: 30px;
+        margin-left: 5rem;
+    }
+    
+    .iconeDelete {
+        width: 40px;
+        height: 30px;
+        margin-left: 5rem;
+    }
+}
+
 @media screen and (max-width: 912px) {
 
     .containerEsquerdo {
         width: 100%;
-        height: 100vh;
     }
 
     .dadosUsuario {
@@ -88,13 +126,13 @@
         margin: auto;
         margin-bottom: 1rem;
 
-        font-size: 32px;
+        font-size: 38px;
         line-height: 29.26px;
     }
 
     .dadosUsuario p {
-        font-size: 26px;
-        line-height: 24.38px;
+        font-size: 30px;
+        line-height: 22.38px;
 
         margin-bottom: 1.5rem;
     }

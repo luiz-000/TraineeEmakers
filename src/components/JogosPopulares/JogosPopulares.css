@@ -100,10 +100,32 @@
 }
 
 
+@media screen and (min-width: 1600px) {
 
-@media screen and (max-width: 912px) {
+    .containerJogosPopulares {
+        top: 12vh;
+    }
+
+    .containerJogosPopulares h2 {
+        font-size: 50px;
+    }
+
+    .infosJogos p{
+        font-size: 25px;
+        line-height: 27px;
+    }
+
+    .infosJogos h3 , .infosJogos a {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
     
     .containerJogosPopulares {
+        top: 15vh;
+
         display: flex;
         flex-direction: column;
 
@@ -157,14 +179,5 @@
     .imagemJogosPopulares img {
         width: 305px;
         height: 173px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .containerJogosPopulares {
-        display: flex;
-        flex-direction: column;
-
-        margin: auto;
     }
 }

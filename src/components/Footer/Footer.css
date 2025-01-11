@@ -1,9 +1,9 @@
 .containerFooter {
     position: relative;
-    
+
     top: 21vh;
     width: 100vw;
-    height: 40vh;
+    height: auto;
 
     margin-left: auto;
     margin-right: auto;
@@ -129,13 +129,23 @@
 }
 
 
-@media screen and (max-width: 912px) {
-    .containerFooter {
-        height: auto;
+@media screen and (max-width: 1024px) {
+    
+    .coluna1 h3 {
+        font-size: 30px;
+        line-height: 40.88px;
     }
+    
+    .coluna1 p {
+        font-size: 28px;
+        line-height: 35.01px;
+    }
+}
 
-    .itemsFooter {
-        margin-top: 20px;
+@media screen and (max-width: 912px) {
+    
+    .containerFooter {
+        padding-bottom: 2.5rem;
     }
 
     .logo {
@@ -164,7 +174,6 @@
     }
 }
 
-
 @media screen and (max-width: 500px) {
 
     .logo {
@@ -190,22 +199,5 @@
     .coluna4 p{
         font-size: 17px;
         line-height: 19.5px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .containerFooter {
-        height: auto;
-    }
-
-    .coluna1 h3 {
-        font-size: 30px;
-        line-height: 40.88px;
-        
-    }
-    
-    .coluna1 p {
-        font-size: 28px;
-        line-height: 35.01px;
     }
 }

@@ -80,7 +80,44 @@
     text-decoration: underline;
 }
 
+
+@media screen and (min-width: 1600px) {
+    
+    .containerFormulario h1 {
+        font-size: 95px;
+        line-height: 70px;
+
+        padding-top: 20px;
+    }
+
+    .FormularioInputs input {
+        margin-top: 40px;
+        height: 70px;
+
+        font-size: 35px;
+    }
+
+    .FormularioInputs input::placeholder{
+        color: #97A4A2;
+        font-weight: 300;
+        font-size: 35px;
+        line-height: 29.26px;
+    }
+
+    .FormularioLinks a {
+        font-size: 40px;
+        line-height: 40px;
+        padding-top: 10px;
+        margin-bottom: auto;
+    }
+
+    .FormularioButton {
+        font-size: 80px;
+    }
+}
+
 @media screen and (max-width: 912px) {
+    
     .container {
         flex-direction: column-reverse;
         height: 100%;
@@ -111,6 +148,7 @@
 }
 
 @media screen and (max-width: 480px) {
+    
     .containerFormulario {
         height: 65vh;
         padding: 15px;
